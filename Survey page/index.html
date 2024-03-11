@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"> Thank you for filling out our survey form to improve your experience</p>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="username" id="name"  placeholder="Enter your name..." required>
+            
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email..."  required>
+            
+            <label id="number-label" for="mobile">Age</label>
+            <input type="number" name="number" id="number" placeholder="Enter your age" min="15" max="35"  required>
+
+            <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+            <select id="dropdown" name="dropdown" required>
+                <option disabled selected value>Select option</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+            
+            <p>Would you recommend our services to a friend?</p>
+            <label>
+                <input type="radio" id="radio" value="Yes" class="options" name="options">Yes
+            </label>
+            <label>
+                <input type="radio" id="radio" value="Maybe" class="options" name="options">Maybe
+            </label>
+            <label>
+                <input type="radio" id="radio" value="No" class="options" name="options">No
+            </label>
+            <p>What do you like the most about us?</p>
+            <label id="checkbox-label" for="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox" value="Delivery">Faster delivery
+            </label>
+            <label id="checkbox-label" for="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox" value="Customer services">Customer services
+            </label>
+            <label id="checkbox-label" for="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox" value="Pricing">Reasonable pricing
+            </label>
+            <label id="checkbox-label" for="checkbox">
+                <input type="checkbox" id="checkbox" name="checkbox" value="Products">Our quality products
+            </label>
+            <p>Additional comments</p>
+            <textarea id="textarea" name="textarea" placeholder="Additional comments" rows="10" cols="80"></textarea>
+            <input type="submit" value="Submit" id="submit" name="submit">
+        </form>
+    </body>
+</html>
